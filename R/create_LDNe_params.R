@@ -20,6 +20,7 @@ create_LDNe_params <- function(x, param_file="LDNe_params.txt",NE_out_file="LDNE
     classy=T
   }else if(is.character(x)&length(x)==1){
     input_file=x
+    classy=F
   }else{
     stop("x should be a RLDNe_data object or a file path")
   }
